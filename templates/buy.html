@@ -1,0 +1,80 @@
+<div class="header">
+    <h1 class="display-4 text-white">Explore our products</h1>
+    <p class="display-4 text-white">Browse through the most variety of products in the world</p>
+</div>
+
+{% extends "common.html"%}
+{% block content %}
+<style>
+    body {
+    font-family: 'Verdana';
+}
+h5 {
+    color: red;
+}
+.w3-codespan
+{
+    color: red;
+    text-align: center;
+}
+.box {
+    border : 5px solid #FF0000;
+    min-width : 300px;
+    max-width : 400px;
+    padding : 10px;
+    margin-left : auto;
+    margin-right : auto;
+    box-shadow: 5px 10px rgba( 255, 0, 0, 0.6);
+}
+</style>
+<div class="container">
+    <div class="row">
+        {% for a in documents %}
+        <div class="col-4 mb-5">
+            <div class="box">
+                <center><h3>{{a["title"]}}</h3></center>
+                <center><h4>Company Name: {{a["name"]}}</h4></center>
+                <center><h4>Email: {{a["email"]}}</h4></center>
+                <center><h5>{{a["description"]}}</h5></center>
+                <center><h5>Category: {{a["unit"]}}</h5></center>
+                <center><h5>Price: ${{a["price"]}} | Shipping Cost: ${{a["ship"]}}</h5></center>
+                <center><img width="250" height="320" src='{{a["img_url"]}}' alt=""></center>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <center>
+                <a class="page-link" href="/page/1">1</a>
+                <a class="page-link" href="/page/2">2</a>
+                <a class="page-link" href="/page/3">3</a>
+                    </center>
+            </ul>
+        </nav>
+        </div>
+</div>
+<!--<div class="container d-flex overflow-auto">
+   {% for a in documents %}
+   <div class="box">
+       <center><h3>{{a["title"]}}</h3></center>
+       <center><h5>{{a["description"]}}</h5></center>
+       <center><h5>${{a["price"]}}</h5></center>
+       <center><h5>Units: {{a["unit"]}}</h5></center>
+       <center><img class="w-100" src='{{a["img_url"]}}' alt=""></center>
+   </div>
+   {% endfor %} -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+<script>
+        $(document).ready(function(){
+        $('.carousel-item:first-child').addClass('active');
+        });
+
+</script>
+{% endblock %}

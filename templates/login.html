@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to your account</title>
+</head>
+<body>
+{% for message in get_flashed_messages()%}
+<p>{{message}}</p>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,135 @@
+<div class="header">
+    <h1 class="display-4 text-white">Create a product</h1>
+    <p class="display-4 text-white">Innovate our community</p>
+</div>
+
+
+{% extends "common.html"%}
+{% block content %}
+    <style>
+* {
+  box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;}
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #FF5E5E;
+  color: white;}
+.header h1 {
+  font-size: 40px;}
+.navbar {
+  overflow: hidden;
+  background-color: #FFB0B0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;}
+.navbar a.right {
+  float: right;}
+.navbar a:hover {
+  background-color: #FFCCCC;
+  color: black;}
+.navbar a.active {
+  background-color: #FFCCCC;
+  color: white;}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #FFF2F2;
+  padding: 20px;}
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFD4D4;}
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;}}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;}}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+    </style>
+
+<div class="row">
+    <div class="side">
+<div class="container">
+    <form method="post">
+        <div class="d-flex">
+                <input type="text" class="form-control" required placeholder="Title" name="title">
+                <input type="text" class="form-control" required placeholder="Description" name="description">
+                <input type="number" class="form-control" required placeholder="$ Price" name="price">
+                <input type="text" class="form-control" required placeholder="Category" name="unit">
+                <input type="number" class="form-control" required placeholder="$ Shipping Cost" name="ship">
+                <input type="text" class="form-control" required placeholder="Company name" name="name">
+                <input type="number" class="form-control" required placeholder="Quantity Limit" name="limit">
+                <input type="email" class="form-control" required placeholder="Email" name="email">
+
+            </div>
+        <div class="input-group">
+            <input type="text" class="form-control" required placeholder="Image Link" name="img_url">
+        <div class="input-group-append">
+            <span class="input-group-btn" id="basic-addon2"><button class="btn btn-danger" type="submit">Create Product</button></span>
+        </div>
+
+            </div>
+        <br><br><br><br>
+
+    </form>
+</div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+{% endblock %}

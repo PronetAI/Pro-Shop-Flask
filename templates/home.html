@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pro-Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+* {
+  box-sizing: border-box;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;}
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #FF5E5E;
+  color: white;}
+.header h1 {
+  font-size: 40px;}
+.navbar {
+  overflow: hidden;
+  background-color: #FFB0B0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;}
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;}
+.navbar a.right {
+  float: right;}
+.navbar a:hover {
+  background-color: #FFCCCC;
+  color: black;}
+.navbar a.active {
+  background-color: #FFCCCC;
+  color: white;}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;}
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #FFF2F2;
+  padding: 20px;}
+.main {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #FFD4D4;}
+.btm-1 {
+  padding: 20px;
+  text-align: center;
+  background: #FFE4E1;}
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;}}
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;}}
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="display-4 text-white">Pronet</h1>
+    <p class="display-4 text-white">The Official Website of Pronet Corp</p>
+</div>
+
+<div class="navbar">
+    <a href="/home" class="left">Home</a>
+    <a href="/">Pro-Shop</a>
+    <a href="/repl">Pronet Repl</a>
+    <a href="/youtube">VihaanM242</a>
+    <a href="/signup" class="right">Sign up</a>
+    <a href="/login" class="right">Log in</a>
+</div>
+<div class="row">
+    <div class="side">
+        <center><h2>The Golden Banana</h2>
+            <h5>A Fallon middle school student short film created by 8th Graders Ian Hsu and Gavin Ngim, along with 7th Grader Vihaan Mehta.</h5>
+            <div><iframe width="424" height="238" src="https://www.youtube.com/embed/duag1VcemUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <p>The Golden Banana is a short film created by Ian Hsu, Gavin Ngim, and Vihaan Mehta. The
+            plot is where a "master criminal" named Garry, tries to steal the legendary Golden
+            Banana from a secret museum. What he does not know is that a surprising twist will
+            cause things to not go as planned...</p>
+        </center>
+    </div>
+    <div class="main">
+        <center>
+            <h2 style="font-family:verdana">Pro Math Geometry Workbook </h2>
+            <h5 style="font-family:verdana">Professional math prep and reference for students</h5>
+            <div><img width="270" height="400" src='https://stickyzealousdegrees.pronetai.repl.co/geo.png' alt=""></div>
+            <h4 style="font-family:verdana">The brand new Pro Math Geometry workbook is the all in one professional math
+            preparation and study guide. It contains easy to understand visual's and the standard universal
+            syntax for geometry. We contain all of the essential theorems and postulates that you
+            need to know about. We also provide several practice problems for students
+            to reinforce the concept and make sure it comes through clearly.</h4>
+            <br>
+        </center>
+    </div>
+</div>
+<div class="footer btm-1">
+    <h2>Car Physics Sandbox</h2>
+    <h4>This is a sample piece of code that you can download to get an idea of the programs we make here at pronet.</h4>
+    <h4>It is a simple car physics sandbox made in pygame. You can control a car using the arrow keys on </h4>
+    <h4>your keyboard. There is drift, drag, and even a brake time for the amount of time it takes a car to slow down and come</h4>
+    <h4>to a full stop. I hope you enjoy this program and if you have any feedback or suggestions, please email us at pronetaicorp@gmail.com</h4>
+    <h4>Make sure to install all of the needed dependencies for this program: os, pygame, pygame.locals, pygame.math and math</h4>
+    <button><a href="car-physics-sandbox/car.py" download="main.py">Download Program</a></button>
+</div>
+<div class="footer">
+    <h2>Pronet 2021</h2>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</body>
+</html>
